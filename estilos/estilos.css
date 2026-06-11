@@ -1,0 +1,22 @@
+/* Contenedor Grid: 3 columnas y 5 filas */
+    .grid-s {
+      display: grid;
+      grid-template-columns: repeat(3, 50px);
+      grid-template-rows: repeat(5, 50px);
+      gap: 0px; /* Espacio entre los bloques */
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    /* Estilo para los bloques que forman la S */
+    .block {
+      background-color: #3b82f6; /* Azul */
+      border-radius: 0px;
+    }
+
+    /* Posicionamiento específico de cada bloque en la S */
+    .row-top    { grid-column: 1 / 4; grid-row: 1; } /* Fila superior completa */
+    .col-left-1 { grid-column: 1;       grid-row: 2; } /* Bloque izquierdo alto */
+    .row-mid    { grid-column: 1 / 4; grid-row: 3; } /* Fila del medio completa */
+    .col-right-2{ grid-column: 3;       grid-row: 4; } /* Bloque derecho bajo */
+    .row-bot    { grid-column: 1 / 4; grid-row: 5; } /* Fila inferior completa */
